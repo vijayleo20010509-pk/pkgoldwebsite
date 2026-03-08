@@ -1,0 +1,36 @@
+/* ═══════════════════════════════════
+   PK GOLD — Global Styles
+═══════════════════════════════════ */
+:root {
+  --gold: #D4A017;
+  --gold2: #F5C518;
+  --orange: #C8720A;
+  --text: #F5EDD5;
+  --glass: rgba(10, 7, 1, 0.72);
+  --border: rgba(212, 160, 23, 0.28);
+  --grad-btn: linear-gradient(135deg, #D4A017, #C8720A);
+}
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body, #root {
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Nunito', sans-serif;
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 3px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(212,160,23,0.4); border-radius: 3px; }
+
+/* Animations */
+@keyframes float   { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
+@keyframes blink   { 0%,100%{opacity:1} 50%{opacity:0.3} }
+@keyframes bgZoom  { 0%{transform:scale(1)} 100%{transform:scale(1.06)} }
+@keyframes slide   { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
+@keyframes tgold   { 0%{background-position:0%} 100%{background-position:300%} }
+@keyframes popIn   { from{opacity:0;transform:scale(0.92)} to{opacity:1;transform:scale(1)} }
+@keyframes fadeUp  { from{opacity:0;transform:translateY(10px)} to{opacity:1;transform:translateY(0)} }
